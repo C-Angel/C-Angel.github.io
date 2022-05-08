@@ -1,0 +1,486 @@
+@import url(../Css/footer.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --first-color : aqua;
+    --Second-color: black;
+    --third-colo: white;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+
+    font-family: 'Pacifico', cursive;
+
+    font-family: 'Roboto Slab', serif;
+background-color: var(--Second-color);
+}
+/* a{
+    font-size: 20px;
+    
+} */
+/*****************************************navbar**************************************************************/
+
+.navbar__fondo{
+    background-image: radial-gradient(circle, #7c6175, #654e5c, #4f3c45, #392c31, #231c1e, #23151b, #230e18, #230416, #320327, #3d003e, #41005a, #350f7c);
+}
+.navbar_logo-neon{
+    font-size: 60px;
+    letter-spacing:-2px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 25px #ff00de;
+    -webkit-text-fill-color: #F4ECFF;
+    -webkit-text-stroke-color:#1a5513;
+    -webkit-text-stroke-width:0.2px; 
+    display: flex;
+
+}
+.navbar_logo-span{
+    font-size: 30px;
+    letter-spacing:-2px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(25, 35, 76), 0 0 20px #1f1a1a, 0 0 25px #1c0a70;
+    -webkit-text-fill-color: #F4ECFF;
+    -webkit-text-stroke-color:#1a5513;
+    -webkit-text-stroke-width:0.2px; 
+   padding: 25px 0px;
+}
+.Button_contacto {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+   font-family: 'Fjalla One', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    /* font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .85rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 250px;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+  }
+  
+  .Button_contacto:focus {
+    outline: 0;
+  }
+  
+  .Button_contacto:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+  }
+  
+  .Button_contacto:hover:after {
+    bottom: 2px;
+    left: 2px;
+  }
+
+/*****************************************End navbar**************************************************************/
+/***********************************************Form Contacto*****************************************************************/
+.form-contacto label {
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Luckiest Guy',
+}
+.form-contacto input {
+    border: none;
+ border-bottom: 2px solid rgb(14, 5, 90);
+ 
+
+}
+/***********************************************END Form Contacto*****************************************************************/
+/***********************************************Main*****************************************************************/
+
+.main_img_principal{
+    background-image: url(/Img/pexels-antonio-moura-10392692.jpg);
+    background-size: cover;
+
+}
+.main_contenedor{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.main_contenedor span{
+    font-size: 40px;
+}
+.main_hello{
+    font-size: 0.5em;
+}
+.main_content{
+   
+    font-family: 'Nunito Sans', sans-serif;
+  
+    font-family: 'Pacifico', cursive;
+  
+    font-family: 'Roboto Slab', serif;
+}
+.main_content .main_namber{
+    color: var(--first-color);
+    font-size: 2em;
+}
+.main_content p{
+    font-size: 1.6em;
+}
+
+.main_image_me{
+    border: 8px solid aqua;
+    box-shadow: 10px 5px 10px aqua;
+    max-height: 450px;
+    max-width: 100%;
+    
+}
+
+.main_button_about,.container_form-button {
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #01c0fa;
+    background-image: linear-gradient(45deg, #00f9aa 0%, #898686  51%, #00bbff  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    animation: myAnim 1s ease 0s infinite normal forwards;
+  }
+  
+  .main_button_about:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  .container_form-button:hover{
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none; 
+  }
+  
+  .main_button_about:active {
+    transform: scale(0.90);
+  }
+  
+  @keyframes myAnim {
+      0% {
+          transform: translate(0);
+      }
+  
+      20% {
+          transform: translate(-2px, 2px);
+      }
+  
+      40% {
+          transform: translate(-2px, -2px);
+      }
+  
+      60% {
+          transform: translate(2px, 2px);
+      }
+  
+      80% {
+          transform: translate(2px, -2px);
+      }
+  
+      100% {
+          transform: translate(0);
+      }
+  }
+
+  .contenedor-about .card{
+    border: none;
+  
+  }
+  .img-about{
+    height: 400px;
+    background-size: cover;
+  }
+  .card-body p{
+      color: var(--third-colo);
+      text-align: justify;
+  }
+/***********************************************End Main*****************************************************************/
+
+
+/***********************************************Proyectos Realizados*****************************************************************/
+
+.button_carrousel_github {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  
+  }
+  
+  .button_carrousel_github::after,
+  .button_carrousel_github::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button_carrousel_github::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+  
+  .button_carrousel_github::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .button_carrousel_github:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .button_carrousel_github:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button_carrousel_github:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+  .img-card{
+    margin: auto;
+    background-size: cover;
+    height: 220px;
+  
+  }
+  
+  .card-proyectos {
+  max-width: 350px;
+   margin: 0 auto;
+
+   box-shadow: 5px 10px 20px gray;
+   background-color: #fffefe;
+  } 
+  .card-title{
+      text-align: center;
+  }
+  .text-cards{
+      color: black !important;
+  }
+
+/***********************************************End Proyectos Realizados*****************************************************************/
+/***********************************************Lenguajes de Programacion*****************************************************************/
+.languages_contenedor_principal{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-auto-rows: 10rem;
+grid-template-areas:
+"img1 img2 img3 img4"
+"img1 img2 img3 img4"
+"img5 img6 img7 img8"
+"img5 img6 img7 img8"
+;
+gap: 0.2rem;
+}
+.languajes_cont_son{
+    margin: auto;
+}
+.g-image1{
+    grid-area: img1;
+}
+.g-image2{
+    grid-area: img2;
+}
+.g-image3{
+    grid-area: img3;
+}
+
+.g-image4{
+    grid-area: img4;
+}
+
+.g-image5{
+    grid-area: img5;
+}
+
+.g-image6{
+    grid-area: img6;
+}
+
+.g-image7{
+    grid-area: img7;
+}
+.g-image8{
+    grid-area: img8;
+}
+.languajes_cont_img{
+    max-width: 100%;
+   width: 180px;
+   margin: auto;
+}
+.languages_title{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+}
+
+
+/***********************************************End Lenguajes de Programacion*****************************************************************/
+/***********************************************Form Contact*****************************************************************/
+
+.form__contact-title{
+    font-size: 3.2em;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    margin-top: 0.5em;
+}
+.form__contenedor_sun{
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+.form__contenedor{
+   display: flex;
+    margin:0 auto;
+    /* align-items: center;
+    justify-content: center; */
+max-width: 600px; 
+
+}
+.form_contenedor_img
+{
+    display: flex;
+    margin:auto;
+    border-radius: 40%;
+ 
+}
+.form__contenedor_sun h3{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Slab', serif;  
+    color: white;
+
+  font-size: 1em;
+
+}
+.form__contenedor p {
+    color: white;
+    font-size: 0.8em;
+}
+
+/***********************************************EndForm Contact*****************************************************************/
+@media(max-width:993px){
+    .main_content .main_namber{
+        font-size: 1.6em;
+        
+    }
+    .main_content{
+        text-align: center;
+    }
+    .main_contenedor{
+    
+        display: block;
+    }
+    .Button_contacto{
+        width: 100%;
+        margin: auto;
+    }
+    .navbar_logo-neon , .navbar_logo-span{
+        margin: auto;
+    }
+    .navbar-mobile{
+        text-align: center;
+    }
+    .navbar-mobile li:hover{
+        background-color: aqua;
+    }
+    .main_button_about{
+        max-width: 350px !important;
+        margin: auto;
+        background-color: #000000 !important;
+    }
+    .main_image_me
+    {
+     display: flex;
+     margin: auto;
+     max-height: 270px;
+     border: none;
+     border-radius: 50%;
+     
+ }
+ .form__contenedor{
+    display: flex;
+    
+    flex-wrap: wrap-reverse;
+}
+    .card-title{
+        font-size: 1em;
+    }
+    .languajes_cont_img{
+        width: 6.5em;
+    }
+    }
+
+
+   
+       
+       
+
+  

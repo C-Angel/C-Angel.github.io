@@ -1,0 +1,95 @@
+@media(max-width:835px){
+    .Button_contacto{
+        width: 100%;
+        margin: auto;
+    }
+    .navbar_logo-neon , .navbar_logo-span{
+        margin: auto;
+    }
+    .navbar-mobile{
+        text-align: center;
+    }
+    .navbar-mobile li:hover{
+        background-color: aqua;
+    }
+    .main_button_about{
+        width: 90% !important;
+        background-color: #000000 !important;
+    }
+    .main_image_me{
+       
+        margin: 0 20px;
+    }
+    .card-title{
+        font-size: 1em;
+    }
+    .languajes_cont_img{
+        width: 8em;
+    }
+    }
+
+
+
+
+    @media(max-width:700px){ 
+        .main_content .main_namber{
+            font-size: 1.6em;
+            
+        }
+        .main_content{
+            text-align: center;
+        }
+        .main_button_about{
+            width: 100%;
+        }
+        .main_contenedor{
+    
+            display: block;
+        }
+        .main_content{
+            padding: 0;
+        }
+       .main_image_me
+       {
+        display: flex;
+        margin: 20px auto;
+        max-height: 260px;
+        border: none;
+        border-radius: 50%;
+        
+    }  
+       .form__contenedor{
+           display: flex;
+           
+           flex-wrap: wrap-reverse;
+       }
+    /* .form__contenedor{
+        display: flex;
+         margin:0 auto;
+         align-items: center;
+         justify-content: center; 
+     
+     
+     } */
+     /* .form_contenedor_img
+     {
+         display: flex;
+         margin:auto;
+        width: 25px;
+      
+     } */
+   
+    
+       }
+
+       
+       
+
+  
+
+      
+
+       
+       
+
+  

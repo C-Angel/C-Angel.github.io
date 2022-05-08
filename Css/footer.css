@@ -1,0 +1,93 @@
+ .contenedor_footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "hijo1 hijo2 hijo3 "
+    "hijo4 hijo4 hijo4 ";
+    background-color: rgb(0, 0, 0);
+   height: 250px;
+   margin: auto;
+   border-top: 2px solid rgb(9, 247, 255);
+}
+.contenedor_footer_hijo1{
+    grid-area: hijo1;
+    margin: auto 60px;
+    
+}
+.contenedor_footer_hijo2{
+grid-area: hijo2;
+margin: auto;
+display: flex;
+
+
+}
+.contenedor_footer_hijo3{
+grid-area: hijo3;
+margin: auto;
+
+}
+.contenedor_footer_hijo4{
+    grid-area: hijo4;
+    background-image: linear-gradient(to right top, #2f2e30, #39383b, #444245, #4f4d51, #5a585c);
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+    height: 70px;
+}
+.contenedor_footer_hijo2 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.contenedor_footer_hijo3 img{
+    padding: 10px;
+}
+.conte_footer_logo-neon{
+    font-size: 60px;
+    letter-spacing:-2px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 25px #ff00de;
+    -webkit-text-fill-color: #F4ECFF;
+    -webkit-text-stroke-color:#1a5513;
+    -webkit-text-stroke-width:0.2px; 
+    display: flex;
+text-decoration: none;
+}
+.conte_footer_span{
+    font-size: 30px;
+    letter-spacing:-2px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(25, 35, 76), 0 0 20px #1f1a1a, 0 0 25px #1c0a70;
+    -webkit-text-fill-color: #F4ECFF;
+    -webkit-text-stroke-color:#1a5513;
+    -webkit-text-stroke-width:0.2px; 
+   padding: 25px 0px;
+}
+@media screen and (max-width:1400px){ 
+
+    .contenedor_footer {
+          display: grid;
+          background-color: #000000;
+          grid-template-columns: 3fr;
+         grid-template-areas: 
+         "hijo1 hijo1 hijo1"
+         "hijo2 hijo2 hijo2"
+         "hijo2 hijo2 hijo2"
+         "hijo3 hijo3 hijo3"
+         "hijo4 hijo4 hijo4"
+         ;
+          height: 250px;
+         
+          /* flex-direction: column;
+          flex-wrap: wrap; */
+      }
+      .contenedor_footer_hijo2{
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .contenedor_footer_hijo1{
+         margin: auto;
+     } 
+  }
+
